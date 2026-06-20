@@ -1,0 +1,27 @@
+let carrito = [];
+
+carrito.push({
+    nombre: "Laptop",
+    precio: 800
+});
+
+carrito.push({
+    nombre: "Mouse",
+    precio: 20
+});
+
+carrito.push({
+    nombre: "Teclado",
+    precio: 50
+});
+
+let total = 0;
+
+for (let i = 0; i < carrito.length; i++) {
+    console.log("Producto: " + carrito[i].nombre);
+    console.log("Precio: $" + carrito[i].precio);
+
+    total = total + carrito[i].precio;
+}
+
+console.log("Total a pagar: $" + total
